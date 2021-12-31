@@ -10,19 +10,6 @@ public class CreateContactTest {
 	@Test (groups ="SmokeTest")
 	public void createContact()
 	{
-		WebDriver driver=null;
-		String Browser = System.getProperty("browser");
-		String url = System.getProperty("url");
-
-		if(Browser.equalsIgnoreCase("chrome"))
-		{
-			driver =  new ChromeDriver();
-			driver.get(url);
-		}
-		else if (Browser.equalsIgnoreCase("fireFox"))
-		{
-			driver = new FirefoxDriver();
-		}
 
 		System.out.println("created contact successfully");
 	}
